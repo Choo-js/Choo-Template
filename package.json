@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "An example of Choo.js.",
     "main": "build/server.js",
+    "type": "module",
     "scripts": {
         "dev": "choo dev",
         "build": "choo clean && choo build --production",
@@ -11,9 +12,17 @@
         "build:dev": "choo clean && choo build",
         "preview:dev": "choo serve",
         "start:dev": "choo clean && choo build && node build/server.js",
-        "clean": "choo clean"
+        "clean": "choo clean",
+        "_start": "ts-node app/index.ts"
     },
     "keywords": [],
     "author": "Choo.js Authors",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@choo-js/coal": "^0.3.0",
+        "@choo-js/core": "^0.3.0",
+        "@choo-js/frontend": "^0.3.0",
+        "@choo-js/ticketing": "^0.3.0",
+        "@choo-js/tsconfig": "^0.3.0"
+    }
 }

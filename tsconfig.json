@@ -1,0 +1,4 @@
+{
+    "extends": "./node_modules/@choo-js/tsconfig/tsconfig.choo.json",
+    "include": ["**/*.ts", "index.html"]
+}
